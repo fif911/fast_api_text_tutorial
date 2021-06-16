@@ -19,6 +19,9 @@ async def verify_token(x_token: str = Header(...)):
         raise HTTPException(status_code=400, detail="X-Token header invalid")
 
 
+# this is test for feature branch
+# feat2
+
 async def verify_key(x_key: str = Header(...)):
     if x_key != "fake-super-secret-key":
         raise HTTPException(status_code=400, detail="X-Key header invalid")
