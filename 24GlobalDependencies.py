@@ -20,6 +20,7 @@ async def verify_token(x_token: str = Header(...)):
 
 
 # this is test for feature branch
+# feat2
 
 async def verify_key(x_key: str = Header(...)):
     if x_key != "fake-super-secret-key":
